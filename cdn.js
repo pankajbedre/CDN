@@ -1,8 +1,8 @@
  var iframe = document.getElementById("myIframe");
-      var iframe_height = "auto";
-      function changeStuff() {
+//       var iframe_height = "auto";
+      function changeStuff(iframe_color,iframe_height) {
         const doc = iframe.contentWindow;
-        const obj = { background: "#00ffff" };
+        const obj = { background: iframe_color };
         setTimeout(() => {
           doc.postMessage(obj, "*");
         }, 100);
